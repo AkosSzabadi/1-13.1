@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hello", "Hello\Hello.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kalkulátor", "Kalkulátor\Kalkulátor.csproj", "{466ABFAC-06EF-45A7-B460-25CA91FEBAFF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mtable", "Mtable\Mtable.csproj", "{861D3276-6271-4E4C-88D9-62F14E9633B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mtable2", "Mtable2\Mtable2.csproj", "{B02452BB-B47F-49FF-9F57-CD41024B8095}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{466ABFAC-06EF-45A7-B460-25CA91FEBAFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{466ABFAC-06EF-45A7-B460-25CA91FEBAFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{466ABFAC-06EF-45A7-B460-25CA91FEBAFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{861D3276-6271-4E4C-88D9-62F14E9633B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{861D3276-6271-4E4C-88D9-62F14E9633B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{861D3276-6271-4E4C-88D9-62F14E9633B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{861D3276-6271-4E4C-88D9-62F14E9633B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B02452BB-B47F-49FF-9F57-CD41024B8095}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B02452BB-B47F-49FF-9F57-CD41024B8095}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B02452BB-B47F-49FF-9F57-CD41024B8095}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B02452BB-B47F-49FF-9F57-CD41024B8095}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
