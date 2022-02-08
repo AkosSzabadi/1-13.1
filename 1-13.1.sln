@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mtable2", "Mtable2\Mtable2.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KoPapirOllo", "KoPapirOllo\KoPapirOllo.csproj", "{52066F0C-AD51-4CB9-A22E-C891843B3458}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SzamKitalalo", "SzamKitalalo\SzamKitalalo.csproj", "{900D509B-137C-4AD6-AB65-6BA70F02909E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{52066F0C-AD51-4CB9-A22E-C891843B3458}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52066F0C-AD51-4CB9-A22E-C891843B3458}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52066F0C-AD51-4CB9-A22E-C891843B3458}.Release|Any CPU.Build.0 = Release|Any CPU
+		{900D509B-137C-4AD6-AB65-6BA70F02909E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{900D509B-137C-4AD6-AB65-6BA70F02909E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{900D509B-137C-4AD6-AB65-6BA70F02909E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{900D509B-137C-4AD6-AB65-6BA70F02909E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
