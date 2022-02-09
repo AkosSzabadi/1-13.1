@@ -18,10 +18,11 @@ namespace KoPapirOllo
             int compScore = 0; 
             int playerScore = 0; 
 
-            bool l = true; 
+            bool l = true;
 
-
-            Console.WriteLine("Mit választasz? (k/p/o)");
+            do
+            {
+                Console.WriteLine("Mit választasz? (k/p/o)");
 
             switch (Console.ReadKey(true).KeyChar)
             { 
@@ -65,8 +66,7 @@ namespace KoPapirOllo
             {
                  Console.WriteLine("Nyertél! Az állás:\nSzámítógép: {0}\nJátékos:{1}", compScore, ++playerScore);
             }
-            do 
-            {
+
                  Console.WriteLine("Akarsz még játszani? i/n");
 
                  if (Console.ReadKey(true).KeyChar == 'n')
