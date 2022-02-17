@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KoPapirOllo", "KoPapirOllo\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SzamKitalalo", "SzamKitalalo\SzamKitalalo.csproj", "{900D509B-137C-4AD6-AB65-6BA70F02909E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinMax", "MinMax\MinMax.csproj", "{A0A57DEE-5983-4A44-AF17-71D1D0C61536}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{900D509B-137C-4AD6-AB65-6BA70F02909E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{900D509B-137C-4AD6-AB65-6BA70F02909E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{900D509B-137C-4AD6-AB65-6BA70F02909E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0A57DEE-5983-4A44-AF17-71D1D0C61536}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0A57DEE-5983-4A44-AF17-71D1D0C61536}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0A57DEE-5983-4A44-AF17-71D1D0C61536}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0A57DEE-5983-4A44-AF17-71D1D0C61536}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
