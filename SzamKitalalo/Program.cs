@@ -10,67 +10,110 @@ namespace SzamKitalalo
     {
         static void Main(string[] args)
         {
-                START:  
-                
-                    Console.WriteLine("Válassz játékmódot!");
-                    Console.WriteLine("1 - Te gondolsz egy számra");
-                    Console.WriteLine("2 - A számítógép gondol egy számra");
+            //Változók
+            int alsohatar = 1, //Véletlen szám alsó határa
+                felsohatar = 100, //Véletlen szám felső határa
+                tippalsohatar,
+                tippfelsohatar,
+                gondoltszam,
+                tipp,
+                probal = 5; //Próbálkozások maximális száma;
+            /* k = Kisebbre gondoltam
+               n = nagyobbra gondoltam
+               t = eltalálta */
 
-                    switch (Console.ReadKey(true).KeyChar)
-                    {
-                        case '1': goto PLAYER;
-                        case '2': goto COMPUTER;
-                    }
-                PLAYER: goto END;
+            char valaszom; // A gép tippjére adott válaszom
 
-                COMPUTER: goto END;
+            bool eltalalta = false; // a gép eltalálta-e a tippet
 
-                END: 
-                    Console.WriteLine("\nAkarsz még játszani? i/n");
-                    switch (Console.ReadKey(true).KeyChar)
-                    {
-                        case 'i': goto START;
-                        case 'n': break;
-                        default: goto END;
-                    }
-        PLAYER:
-            Console.WriteLine("Gondolj egy számra! (1 - 100)");
-            Console.ReadLine();
+            Random rnd = new Random();
 
-            x = 50;
-            int min = 0;
-            int max = 100;
-            while (i < 5)
+            //Játék ismétlése
+            do
             {
-                Console.WriteLine("A számítógép szerint a szám {0}", x);
-                Console.WriteLine("Szerinted? (k/n/e)");
-
-                switch (Console.ReadKey(true).KeyChar)
+                //Megkérdezem, hogy ki lesz a kitaláló
+                Console.WriteLine("Leszel az, aki gondol egy számra? (i/n)");
+                eltalalta = false; b
+                if (Console.ReadKey().KeyChar == 'n')
                 {
-                    case 'k':
-                        if (i == 3) 
-                            x = r.Next(min, x);
+                    //Ha a játékos a kitaláló akkor a Gep generalja a szamot
+                    gondoltszam = rnd.Next(alsohatar, felsohatar);
+                    //A gép gondol egy számot és a játékosnak kell kitalálni, max 5 próbálkozás.
+                    for (int i = 0; i <= probal; i++)
+                    {
+                        //tipp beolvasas
+                        Console.WriteLine("\nTippeljen!");
+                        tipp = int.Parse(Console.ReadLine());
+                        //Kiértékelem a tippet
+                        //ha nagyobb a tipp
+                        if (gondoltszam < tipp)
+                        {
+                            Console.WriteLine("Kisebb számra gondoltam");
+                        }
+                        //Ha kisebb a tipp.
+                        else if (gondoltszam > tipp)
+                        {
+                            Console.WriteLine("Nagyobb számra gondoltam");
+                        }
+                        //ha pontos a tipp.
                         else
                         {
-                            max = x;
-                            x -= (max - min) / 2;
+                            eltalalta = true;
+                            Console.WriteLine("Gratulálok, eltaláltad");
+                            break;
                         }
-                        break;
-                    case 'n':
-                        if (i == 3)
-                            x = r.Next(x + 1, max);
-                        else
-                        {
-                            min = x;
-                            x += (max - min) / 2;
-                        }
-                        break;
-                    case 'e':
-                        Console.WriteLine("A számítógép nyert!");
-                        goto END; 
+                    }
+                    if (!eltalalta)
+                    {
+                        Console.WriteLine("Nem nyertél");
+                    }
                 }
-                ++i;
-            }
+                //Ha a gép a kitaláló         
+                else
+                {
+                    //megadom a kezdeti értéket
+                    eltalalta = false;
+                    //tipp határainak meghatározása
+                    tippalsohatar = alsohatar;
+                    tippfelsohatar = felsohatar;
+                    //a gép tippel
+                    Console.WriteLine("\nGondolj egy számra!");
+                    for (int i = 0; i <= probal; i++)
+                    {
+                        //a gép tippjének meghatározása
+                        tipp = tippalsohatar + (tippfelsohatar - tippalsohatar) / 2;
+                        Console.WriteLine("\nPC: A tippem: {0}", tipp);
+                        Console.WriteLine("\nEltaláltam a számot? \nk = Kisebb a szám | n = nagyobb a szám | t = ez az a szám");
+                        //Kiértékelem a tippet megadom a választ
+                        valaszom = Console.ReadKey().KeyChar;
+                        if (valaszom == 'n')
+                        {
+                            Console.WriteLine("\nNagyobbra gondoltam!");
+                            tippalsohatar = tipp;
+                        }
+                        else if (valaszom == 'k')
+                        {
+                            Console.WriteLine("\nKisebbre gondoltam!");
+                            tippfelsohatar = tipp;
+                        }
+                        else
+                        {
+                            eltalalta = true;
+                            Console.WriteLine("\nGratulálok eltalálta");
+                            break;
+                        }
+                    }
+                    // kiirom nem találta el, ha nem találta el 5.re
+                    if (!eltalalta)
+                    {
+                        Console.WriteLine("Sajnos nem találta el!");
+                    }
+
+                }
+                //kérdés h akarsz-e újra játszani
+                Console.WriteLine("\nFolytatjuk a játékot? (i/n)");
+            } while (Console.ReadKey(true).KeyChar == 'i');
+            // sor kiirtekeles
         }
     }
 }
