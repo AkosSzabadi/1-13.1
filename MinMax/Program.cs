@@ -20,7 +20,7 @@ namespace MinMax
 
             for (int i = 0; i < arr.Length; ++i)
             {
-                arr[i] = rnd.Next(max,min);
+                arr[i] = rnd.Next(0,1000);
             }
             for (int i = 0; i < 30; ++i) 
             {
