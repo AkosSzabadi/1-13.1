@@ -1,0 +1,50 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Szigetek
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Bekérés
+            Console.WriteLine("Add meg az adatokat! (0/1)");
+            // Változók
+            string data = Console.ReadLine();
+            int islandCount = 0;
+            int maxIslandLength = 0;
+            int i = 0;
+
+            // A string index-eket számolja, hogyha 1-est talál megnöveli a változót amelyben a szigetek számát tároljuk(islandCount)
+            while (i < data.Length)
+            {
+                if (data[i] == '1')
+                {
+                    ++islandCount;
+                    int j = i;
+                    int tmp = 0;
+                    // A sziget hosszát számolja(Vagyis az 1-eseket)
+                    while (j < data.Length && data[j] == '1')
+                    {
+                        ++j;
+                        ++tmp;
+                    }
+                    i = j;
+
+                    if (tmp > maxIslandLength) { maxIslandLength = tmp; }
+                }
+                // False ág, ez esetben tovább megy a string karakterein
+                else
+                {
+                    ++i;
+                }
+            }
+            Console.WriteLine("Leghosszabb sziget: {0}", maxIslandLength);
+            Console.WriteLine("Szigetek száma: {0}", islandCount);
+            Console.ReadKey();
+        }
+    }
+}

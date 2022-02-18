@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SzamKitalalo", "SzamKitalal
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinMax", "MinMax\MinMax.csproj", "{A0A57DEE-5983-4A44-AF17-71D1D0C61536}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sziget", "Sziget\Sziget.csproj", "{9443E039-3C77-44FE-B85C-23FE67DE91B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{A0A57DEE-5983-4A44-AF17-71D1D0C61536}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0A57DEE-5983-4A44-AF17-71D1D0C61536}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0A57DEE-5983-4A44-AF17-71D1D0C61536}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9443E039-3C77-44FE-B85C-23FE67DE91B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9443E039-3C77-44FE-B85C-23FE67DE91B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9443E039-3C77-44FE-B85C-23FE67DE91B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9443E039-3C77-44FE-B85C-23FE67DE91B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
