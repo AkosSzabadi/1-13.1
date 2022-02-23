@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dolgozat_feladat3", "Dolgoz
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dolgozat_feladat4", "Dolgozat_feladat4\Dolgozat_feladat4.csproj", "{9FAFBBE4-03CA-4ACA-85AA-489CA11F25E1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testomegindex", "Testomegindex\Testomegindex.csproj", "{F50691F4-429B-466E-9006-B186E4289F93}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{9FAFBBE4-03CA-4ACA-85AA-489CA11F25E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FAFBBE4-03CA-4ACA-85AA-489CA11F25E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9FAFBBE4-03CA-4ACA-85AA-489CA11F25E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F50691F4-429B-466E-9006-B186E4289F93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F50691F4-429B-466E-9006-B186E4289F93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F50691F4-429B-466E-9006-B186E4289F93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F50691F4-429B-466E-9006-B186E4289F93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
