@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sziget", "Sziget\Sziget.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlaghomerseklet", "Atlaghomerseklet\Atlaghomerseklet.csproj", "{40C3B52B-81A2-42A6-B168-9B022B47DAF2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dolgozat_feladat1", "Dolgozat_feladat1\Dolgozat_feladat1.csproj", "{069E7BBB-DA4F-4B2A-B194-0E688B79438B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{40C3B52B-81A2-42A6-B168-9B022B47DAF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40C3B52B-81A2-42A6-B168-9B022B47DAF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40C3B52B-81A2-42A6-B168-9B022B47DAF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{069E7BBB-DA4F-4B2A-B194-0E688B79438B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{069E7BBB-DA4F-4B2A-B194-0E688B79438B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{069E7BBB-DA4F-4B2A-B194-0E688B79438B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{069E7BBB-DA4F-4B2A-B194-0E688B79438B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
