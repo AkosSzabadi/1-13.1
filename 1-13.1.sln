@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlaghomerseklet", "Atlagho
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dolgozat_feladat1", "Dolgozat_feladat1\Dolgozat_feladat1.csproj", "{069E7BBB-DA4F-4B2A-B194-0E688B79438B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dolgozat_feladat2", "Dolgozat_feladat2\Dolgozat_feladat2.csproj", "{3874197E-D123-44E4-8E16-E94FBE76D9A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dolgozat_feladat3", "Dolgozat_feladat3\Dolgozat_feladat3.csproj", "{79E28BD2-B45B-441E-9144-6EC0219768EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{069E7BBB-DA4F-4B2A-B194-0E688B79438B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{069E7BBB-DA4F-4B2A-B194-0E688B79438B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{069E7BBB-DA4F-4B2A-B194-0E688B79438B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3874197E-D123-44E4-8E16-E94FBE76D9A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3874197E-D123-44E4-8E16-E94FBE76D9A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3874197E-D123-44E4-8E16-E94FBE76D9A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3874197E-D123-44E4-8E16-E94FBE76D9A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79E28BD2-B45B-441E-9144-6EC0219768EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79E28BD2-B45B-441E-9144-6EC0219768EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79E28BD2-B45B-441E-9144-6EC0219768EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79E28BD2-B45B-441E-9144-6EC0219768EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
