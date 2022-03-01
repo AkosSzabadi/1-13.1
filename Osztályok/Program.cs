@@ -13,6 +13,7 @@ namespace objektumorientaltprogramozas
         private string fajta;
         private string szin;
         private int kor;
+        protected string hang;
 
         public Allat(string nev, string fajta, string szin)
         {
@@ -29,52 +30,27 @@ namespace objektumorientaltprogramozas
             this.kor = 0;
         }
 
-        public string getnev()
+        public string hangotAd(){return this.hang;}
+        public string getnev(){return this.nev;}
+        public string getfajta(){return this.fajta;}
+        public string getszin(){return this.szin;}
+        public string getgazda(){return this.gazda;}
+        public int getkor(){return this.kor;}
+        public void setgazda(string p){this.gazda = p;}
+        public void setHang(string h){if (h != ""){ this.hang = h;}}
+        public void setKor(int p){if (p > 0 && p < 50){ this.kor = p;}}
+        public void setNev(string n){if (n != ""){this.nev = n;}}
+        public void setFajta(string f){if (f != ""){this.fajta = f;}}
+        public void setSzin(string s){if (s != ""){this.szin = s;}}}
+    class Kutya : Allat
+    {
+        private string gazda;
+        public Kutya(string nev, string fajta, string szin) : base(nev,fajta,szin)
         {
-            return this.nev;
-        }
-        public string getfajta()
-        {
-            return this.fajta;
-        }
-        public string getszin()
-        {
-            return this.szin;
-        }
-        public int getkor()
-        {
-            return this.kor;
+            this.gazda = "ismeretlen";
+            this.hang = "vau vauuu te köcsög";
         }
 
-        public void setKor(int p)
-        {
-            if (p > 0 && p < 50)
-            {
-                this.kor = p;
-            }
-
-        }
-        public void setNev(string n)
-        {
-            if (n != "")
-            {
-                this.nev = n;
-            }
-        }
-        public void setFajta(string f)
-        {
-            if (f != "")
-            {
-                this.fajta = f;
-            }
-        }
-        public void setSzin(string s)
-        {
-            if (s != "")
-            {
-                this.szin = s;
-            }
-        }
     }
     class Program
     {
@@ -93,6 +69,10 @@ namespace objektumorientaltprogramozas
             allat3.setFajta("Kuvasz");
             allat3.setSzin("Barna");
             Console.WriteLine("Az állat neve: {0}\nAz állat fajtája: {1}\nAz állat színe: {2}\nAz állat kora: {3} éves\n", allat3.getnev(), allat3.getfajta(), allat3.getszin(), allat3.getkor());
+            Console.WriteLine("\nAz állat hangja: {0}", allat3.hangotAd());
+            Console.WriteLine("\n========================= Származtatott ===========================\n");
+            Kutya kutya1 = new Kutya("Bogár", "puli", "Rózsaszín");
+            Console.WriteLine("")
             Console.ReadKey();
         }
     }
