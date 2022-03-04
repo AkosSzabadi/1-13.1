@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testomegindex", "Testomegin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Osztályok", "Osztályok\Osztályok.csproj", "{F87993D2-B3C5-4BCE-89EA-A079934283C5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kör", "Kör\Kör.csproj", "{2A8B6630-9D24-4D0C-A7D1-9D00BB565204}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{F87993D2-B3C5-4BCE-89EA-A079934283C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F87993D2-B3C5-4BCE-89EA-A079934283C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F87993D2-B3C5-4BCE-89EA-A079934283C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A8B6630-9D24-4D0C-A7D1-9D00BB565204}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A8B6630-9D24-4D0C-A7D1-9D00BB565204}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A8B6630-9D24-4D0C-A7D1-9D00BB565204}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A8B6630-9D24-4D0C-A7D1-9D00BB565204}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
