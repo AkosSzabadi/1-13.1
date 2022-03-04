@@ -9,7 +9,8 @@ namespace Kör
 
     class Kor
     {
-        private double sugar, terulet, kerulet;
+        private double terulet, kerulet;
+        protected double sugar;
         public Kor(double sugar, double terulet, double kerulet)
         {
             this.sugar = sugar;
@@ -36,6 +37,39 @@ namespace Kör
             this.kerulet = 2 * Math.PI * getSugar();
             return this.kerulet;
         }
+        }
+        class Henger : Kor
+        {
+            private int testmagassag;
+            private double t, at;
+            public Henger() : base()
+            {
+                this.testmagassag = 0;
+                this.t = 0;
+                this.at = 0;
+
+            }
+            public void bekeres()
+            {
+                int M = int.Parse(Console.ReadLine());
+                if (M != 0) { this.testmagassag = M; }
+
+            }
+            public int bekert()
+            {
+                return this.testmagassag;
+            }
+            public double terfogat()
+            {
+                this.t = Math.PI * (getSugar() * getSugar()) * bekert();
+                return this.t;
+
+            }
+            public double alapterulet()
+            {
+                this.at = Math.PI * (getSugar() * getSugar());
+                return this.at;
+            }
     }
     class Program
     {
@@ -45,7 +79,12 @@ namespace Kör
             Console.WriteLine("Adja meg a sugarat: ");
             Kor S = new Kor();
             S.setSugar();
-            Console.WriteLine("\n A területe: {0} \n A kerülete: {1}", S.teruletszamol(), S.keruletszamol());
+            Console.WriteLine("\nA területe: {0}\n A kerülete: {1}", S.teruletszamol(), S.keruletszamol());
+            Console.WriteLine("\nAdd meg a henger sugarát: ");
+            Henger x = new Henger();
+            x.setSugar();
+            Console.WriteLine("\nA henger sugara: {0} \nA henger térfogata: {1} \nA henger alapterülete: {2}", x.getSugar(),x.terfogat(),x.alapterulet());
+
             Console.ReadKey();
         }
     }
