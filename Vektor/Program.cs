@@ -8,7 +8,7 @@ namespace Vektor
 {
     class Vektor
     {
-        private double hossz;
+        private double hossz, osszeg;
         private int elemszam;
         private int[] tomb = new int[]{ };
 
@@ -31,6 +31,14 @@ namespace Vektor
                 tomb[i] = fel.Next();
             }
         }
+        public void setÖsszeg()
+        {
+            for(int i=0;i<tomb.Length;i++)
+            {
+                osszeg = osszeg + tomb[i];
+            }
+
+        }
         public double getTomb()
         {
             return this.elemszam;
@@ -40,7 +48,8 @@ namespace Vektor
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("");
+            Vektor R = new Vektor();
+            Console.WriteLine();
             Console.ReadKey();
         }
     }
