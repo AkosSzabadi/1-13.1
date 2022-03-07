@@ -61,9 +61,8 @@ namespace Kör
             }
             public double terfogat()
             {
-                this.t = Math.PI * (getSugar() * getSugar()) * bekert();
+                this.t = alapterulet() * bekert();
                 return this.t;
-
             }
             public double alapterulet()
             {
@@ -76,14 +75,15 @@ namespace Kör
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Adja meg a sugarat: ");
-            Kor S = new Kor();
+            Console.WriteLine("Adja meg a kör sugarát : ");
+            Henger S = new Henger();
             S.setSugar();
             Console.WriteLine("\nA területe: {0}\n A kerülete: {1}", S.teruletszamol(), S.keruletszamol());
             Console.WriteLine("\nAdd meg a henger sugarát: ");
-            Henger x = new Henger();
-            x.setSugar();
-            Console.WriteLine("\nA henger sugara: {0} \nA henger térfogata: {1} \nA henger alapterülete: {2}", x.getSugar(),x.terfogat(),x.alapterulet());
+            S.setSugar();
+            Console.WriteLine("\nAdd meg a henger testmagasságát: ");
+            S.bekeres();
+            Console.WriteLine("\nA henger sugara: {0} \nA henger térfogata: {1} \nA henger alapterülete: {2}", S.getSugar(),S.terfogat(),S.alapterulet());
 
             Console.ReadKey();
         }
