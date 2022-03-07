@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Osztályok", "Osztályok\Os
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kör", "Kör\Kör.csproj", "{2A8B6630-9D24-4D0C-A7D1-9D00BB565204}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vektor", "Vektor\Vektor.csproj", "{0178E252-3D5B-405C-B6AA-D88AAE70C2B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{2A8B6630-9D24-4D0C-A7D1-9D00BB565204}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A8B6630-9D24-4D0C-A7D1-9D00BB565204}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A8B6630-9D24-4D0C-A7D1-9D00BB565204}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0178E252-3D5B-405C-B6AA-D88AAE70C2B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0178E252-3D5B-405C-B6AA-D88AAE70C2B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0178E252-3D5B-405C-B6AA-D88AAE70C2B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0178E252-3D5B-405C-B6AA-D88AAE70C2B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
