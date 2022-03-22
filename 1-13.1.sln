@@ -47,6 +47,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csempe", "csempe\csempe.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Halmazok", "Halmazok\Halmazok.csproj", "{7554FD2F-C38E-4827-A3B5-9C74AE69F12D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "programozasitetelek2", "programozasitetelek2\programozasitetelek2.csproj", "{CBFB206D-E1C2-4AB6-8B9D-8362185A39A5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +143,10 @@ Global
 		{7554FD2F-C38E-4827-A3B5-9C74AE69F12D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7554FD2F-C38E-4827-A3B5-9C74AE69F12D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7554FD2F-C38E-4827-A3B5-9C74AE69F12D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBFB206D-E1C2-4AB6-8B9D-8362185A39A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBFB206D-E1C2-4AB6-8B9D-8362185A39A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBFB206D-E1C2-4AB6-8B9D-8362185A39A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBFB206D-E1C2-4AB6-8B9D-8362185A39A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -28,7 +28,7 @@ namespace Halmazok
             elemszam1 = int.Parse(Console.ReadLine());
             if (elemszam1 > 200) { elemszam1 = rdm.Next(100, 200); }
             egyes = new int[elemszam1];
-            for (int i = 0; i < elemszam1; i++) { egyes[i] = rdm.Next(-100, 100); Console.Write("{0} ", egyes[i]); }
+            for (int i = 0; i < elemszam1; i++) { egyes[i] = rdm.Next(-100, 100); Console.Write("{0} ", egyes[i]); } 
 
         }
         public int[] feltolt2_x() { 
@@ -47,8 +47,10 @@ namespace Halmazok
         public void valasz()
         {
             //Egyes betűk funkcióinak megadása: 
+
             Console.WriteLine("\nVálaszd ki a műveletet:\nu = Unió\nm = Metszet\na = A-B\nb = B-A\n");
             key = Console.ReadKey().KeyChar;
+
             if (key == 'u') // Unió
             {
                 IEnumerable<int> unio = feltolt1_x().Union(feltolt2_x());
@@ -64,6 +66,7 @@ namespace Halmazok
                 int[] metszet = new int[o];
                 int j;
                 int k = 0;
+
                 for (int i = 0; i < n; i++)
                 {
                     j = 0;
@@ -74,6 +77,7 @@ namespace Halmazok
                         k++;
                     }
                 }
+
                 o = k;
                 for (int i = 0; i < o; i++)
                 {
