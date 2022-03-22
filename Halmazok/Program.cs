@@ -23,30 +23,36 @@ namespace Halmazok
         public Halmazok() { }
         public void feltolt1()
         {
-            Console.WriteLine("Írd be az elemek számát az első halmazban!");
+            Console.WriteLine("Az első halmaz elemeinek számna: ");
+            //elemszam1 100 és 200 közötti random számokkal való feltöltése
             elemszam1 = int.Parse(Console.ReadLine());
             if (elemszam1 > 200) { elemszam1 = rdm.Next(100, 200); }
             egyes = new int[elemszam1];
             for (int i = 0; i < elemszam1; i++) { egyes[i] = rdm.Next(-100, 100); Console.Write("{0} ", egyes[i]); }
 
         }
-        public int[] feltolt2_x() { return this.kettes; }
-        public int[] feltolt1_x() { return this.egyes; }
+        public int[] feltolt2_x() { 
+            return this.kettes; }
+        public int[] feltolt1_x() { 
+            return this.egyes; }
         public void feltolt2()
         {
-            Console.WriteLine("\nÍrd be az elemek számát a második halmazban!");
+            Console.WriteLine("\nA második halmaz elemeinek száma: ");
+            //elemszam2 100 és 200 közötti random számokkal való feltöltése
             elemszam2 = int.Parse(Console.ReadLine());
             if (elemszam2 > 200) { elemszam2 = rdm.Next(100, 200); }
             kettes = new int[elemszam2];
-            for (int i = 0; i < elemszam2; i++) { kettes[i] = rdm.Next(-100, 100); Console.Write("{0} ", B[i]); }
+            for (int i = 0; i < elemszam2; i++) { kettes[i] = rdm.Next(-100, 100); Console.WriteLine("{0} ", kettes[i]); } 
         }
         public void valasz()
         {
-            Console.WriteLine("\nKérlek add meg, hogy melyik műveletet végezzük el!:\nu = Unió\nm = Metszet\na = A-B\nb = B-A\n");
+            //Egyes betűk funkcióinak megadása: 
+            Console.WriteLine("\nVálaszd ki a műveletet:\nu = Unió\nm = Metszet\na = A-B\nb = B-A\n");
             key = Console.ReadKey().KeyChar;
             if (key == 'u') // Unió
             {
-                IEnumerable<int> unio = feltoltA_x().Union(feltoltB_x());
+                IEnumerable<int> unio = feltolt1_x().Union(feltolt2_x());
+                Console.WriteLine();
                 Console.WriteLine("\nA 2 halmaz uniójába tartozó számok: ");
                 foreach (int un in unio) { Console.Write("{0} ", un); }
             }
@@ -73,7 +79,7 @@ namespace Halmazok
                 {
                     if (metszet == null)
                     {
-                        Console.Write("\nSajnos nincs a 2 tömb metszetében egy szám sem.");
+                        Console.Write("\nA 2 tömb metszetében nincs szám");
                     }
                     else
                     {
@@ -95,7 +101,7 @@ namespace Halmazok
                 foreach (int ba in bb) { Console.Write("{0} ", ba); }
             }
             else
-            { Console.WriteLine("\nKérlek a felsorolt karakterek közül egyet adj meg!"); }
+            { Console.WriteLine("\nAdj meg egy karaktert a felsoroltak közül: "); }
         }
     }
     class Program
