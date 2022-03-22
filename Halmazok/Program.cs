@@ -1,0 +1,112 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Halmazok
+{
+    class Halmazok
+    {
+        private int[] egyes, kettes;
+        private int elemszam1;
+        private int elemszam2;
+        private char key;
+        private Random rdm = new Random();
+        public Halmazok(int[] egyes, int[] kettes, int elemszam1, int elemszam2)
+        {
+            this.egyes = egyes;
+            this.kettes = kettes;
+            this.elemszam1 = elemszam1;
+            this.elemszam2 = elemszam2;
+        }
+        public Halmazok() { }
+        public void feltolt1()
+        {
+            Console.WriteLine("Írd be az elemek számát az első halmazban!");
+            elemszam1 = int.Parse(Console.ReadLine());
+            if (elemszam1 > 200) { elemszam1 = rdm.Next(100, 200); }
+            egyes = new int[elemszam1];
+            for (int i = 0; i < elemszam1; i++) { egyes[i] = rdm.Next(-100, 100); Console.Write("{0} ", egyes[i]); }
+
+        }
+        public int[] feltolt2_x() { return this.kettes; }
+        public int[] feltolt1_x() { return this.egyes; }
+        public void feltolt2()
+        {
+            Console.WriteLine("\nÍrd be az elemek számát a második halmazban!");
+            elemszam2 = int.Parse(Console.ReadLine());
+            if (elemszam2 > 200) { elemszam2 = rdm.Next(100, 200); }
+            kettes = new int[elemszam2];
+            for (int i = 0; i < elemszam2; i++) { kettes[i] = rdm.Next(-100, 100); Console.Write("{0} ", B[i]); }
+        }
+        public void valasz()
+        {
+            Console.WriteLine("\nKérlek add meg, hogy melyik műveletet végezzük el!:\nu = Unió\nm = Metszet\na = A-B\nb = B-A\n");
+            key = Console.ReadKey().KeyChar;
+            if (key == 'u') // Unió
+            {
+                IEnumerable<int> unio = feltoltA_x().Union(feltoltB_x());
+                Console.WriteLine("\nA 2 halmaz uniójába tartozó számok: ");
+                foreach (int un in unio) { Console.Write("{0} ", un); }
+            }
+            else if (key == 'm') // Metszet
+            {
+                int n = elemszam1; //a tömb mérete
+                int m = elemszam2; //b tömb mérete
+                int o = n + m;
+                int[] metszet = new int[o];
+                int j;
+                int k = 0;
+                for (int i = 0; i < n; i++)
+                {
+                    j = 0;
+                    while (j < m && feltolt2_x()[j] != feltolt1_x()[i]) { j++; }
+                    if (j < m)
+                    {
+                        metszet[k] = feltolt1_x()[i];
+                        k++;
+                    }
+                }
+                o = k;
+                for (int i = 0; i < o; i++)
+                {
+                    if (metszet == null)
+                    {
+                        Console.Write("\nSajnos nincs a 2 tömb metszetében egy szám sem.");
+                    }
+                    else
+                    {
+                        Console.Write("\nA 2 tömb metszete: \n{0}", metszet[i]);
+                    }
+                }
+
+            }
+            else if (key == 'a') // A halmazból B halmaz
+            {
+                IEnumerable<int> ab = feltolt1_x().Except(feltolt2_x());
+                Console.WriteLine("\nA 2 halmaz külömbsége (A-B) ");
+                foreach (int aa in ab) { Console.Write("{0} ", aa); }
+            }
+            else if (key == 'b') // B halmazból A halmaz
+            {
+                IEnumerable<int> bb = feltolt2_x().Except(feltolt1_x());
+                Console.WriteLine("\nA 2 halmaz külömbsége (B-A) ");
+                foreach (int ba in bb) { Console.Write("{0} ", ba); }
+            }
+            else
+            { Console.WriteLine("\nKérlek a felsorolt karakterek közül egyet adj meg!"); }
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Halmazok megoldas = new Halmazok();
+            megoldas.feltolt1();
+            megoldas.feltolt2();
+            megoldas.valasz();
+            Console.ReadKey();
+        }
+    }
+}
