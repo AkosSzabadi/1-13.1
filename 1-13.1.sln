@@ -49,6 +49,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Halmazok", "Halmazok\Halmaz
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "programozasitetelek2", "programozasitetelek2\programozasitetelek2.csproj", "{CBFB206D-E1C2-4AB6-8B9D-8362185A39A5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Órai", "Órai\Órai.csproj", "{BE1A5ED2-DFBF-4AAD-B440-649DF3C814B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -147,6 +149,10 @@ Global
 		{CBFB206D-E1C2-4AB6-8B9D-8362185A39A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBFB206D-E1C2-4AB6-8B9D-8362185A39A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBFB206D-E1C2-4AB6-8B9D-8362185A39A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE1A5ED2-DFBF-4AAD-B440-649DF3C814B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE1A5ED2-DFBF-4AAD-B440-649DF3C814B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE1A5ED2-DFBF-4AAD-B440-649DF3C814B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE1A5ED2-DFBF-4AAD-B440-649DF3C814B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
