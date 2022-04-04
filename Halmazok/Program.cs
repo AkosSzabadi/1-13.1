@@ -11,14 +11,17 @@ namespace Halmazok
         private int[] egyes, kettes;
         private int elemszam1;
         private int elemszam2;
+        //private int elemszamok;
         private char key;
         private Random rdm = new Random();
-        public Halmazok(int[] egyes, int[] kettes, int elemszam1, int elemszam2)
+
+        public Halmazok(int[] egyes, int[] kettes, int elemszam1, int elemszam2, int elemszamok)
         {
             this.egyes = egyes;
             this.kettes = kettes;
             this.elemszam1 = elemszam1;
             this.elemszam2 = elemszam2;
+            //this.elemszamok = elemszamok;
         }
         public Halmazok() { }
         public void feltolt1()
@@ -29,7 +32,6 @@ namespace Halmazok
             if (elemszam1 > 200) { elemszam1 = rdm.Next(100, 200); }
             egyes = new int[elemszam1];
             for (int i = 0; i < elemszam1; i++) { egyes[i] = rdm.Next(-100, 100); Console.Write("{0} ", egyes[i]); } 
-
         }
         public int[] feltolt2_x() { 
             return this.kettes; }

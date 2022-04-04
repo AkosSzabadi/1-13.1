@@ -51,6 +51,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "programozasitetelek2", "pro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Órai", "Órai\Órai.csproj", "{BE1A5ED2-DFBF-4AAD-B440-649DF3C814B2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorozatok", "Sorozatok\Sorozatok.csproj", "{83571D2B-1602-4FCC-88B5-DEF3C26E0541}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,10 @@ Global
 		{BE1A5ED2-DFBF-4AAD-B440-649DF3C814B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE1A5ED2-DFBF-4AAD-B440-649DF3C814B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE1A5ED2-DFBF-4AAD-B440-649DF3C814B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83571D2B-1602-4FCC-88B5-DEF3C26E0541}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83571D2B-1602-4FCC-88B5-DEF3C26E0541}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83571D2B-1602-4FCC-88B5-DEF3C26E0541}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83571D2B-1602-4FCC-88B5-DEF3C26E0541}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
