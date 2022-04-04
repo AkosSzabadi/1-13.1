@@ -18,6 +18,7 @@ namespace Binaris
             for (int i = 0; i < beolvas.Length; i++)
             { if (beolvas[i] == '1') { darab += 1; }}
             Console.WriteLine("{0} darab 1-es van a beírt bináris számban! ", darab);
+            Console.WriteLine("---Feladat vége---");
         }
     }
     class Program
