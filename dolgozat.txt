@@ -1,0 +1,83 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Városnevek
+{
+    class Varosnevek
+    {
+        private int elemszam;
+        private string elemnevek,
+                       torles,
+                       tartalmaz;
+        public Varosnevek() { }
+
+        List<string> Lista = new List<string>();
+
+        public void setDb()
+        {
+            Console.WriteLine("Hány nevet akar eltárolni? ");
+            elemszam = Convert.ToInt32(Console.ReadLine());
+            if (elemszam == 0)
+            { }
+        }
+        public void setNevek()
+        {
+            Console.WriteLine("Írja be a város neveket: ");
+            elemnevek = Console.ReadLine();
+            Lista.Add(elemnevek);
+        }
+        public void getNevek()
+        {
+            string joined = string.Join("", "");
+            Console.WriteLine(Lista);
+        }
+        public void getVan()
+        {
+            Console.WriteLine("Adjon meg egy városnevet(listában van e)");
+            tartalmaz = Console.ReadLine();
+            if (Lista.Contains(tartalmaz))
+            {
+                Console.WriteLine("Ez a város szerepel a listában!");
+            }
+            else
+            {
+                Console.WriteLine("Ez a város nem szerepel a listában");
+            }
+        }
+        public void delNev()
+        {
+            Console.WriteLine("Adjon meg egy városnevet(törlés)");
+            torles = Console.ReadLine();
+            if (Lista.Contains(torles))
+            {
+                Lista.Remove(torles);
+            }
+            else
+            {
+                Lista.Add(torles);
+            }
+        }
+        public void delLast()
+        {
+            Lista.RemoveAt(Lista.Count - 1);
+        }
+
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Varosnevek Bekeres = new Varosnevek();
+            Bekeres.setDb();
+            Bekeres.getNevek();
+            Bekeres.setNevek();
+            Bekeres.getVan();
+            Bekeres.delNev();
+            Bekeres.delLast();
+            Console.ReadKey();
+        }
+    }
+}
