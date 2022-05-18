@@ -63,6 +63,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teszt", "Teszt\Teszt.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rekordok", "Rekordok\Rekordok.csproj", "{35013C43-42C5-43C4-B503-8F8A409F0D3A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoList", "AutoList\AutoList.csproj", "{CD14C3C0-6D28-4A30-9059-2C7F651581C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -189,6 +191,10 @@ Global
 		{35013C43-42C5-43C4-B503-8F8A409F0D3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35013C43-42C5-43C4-B503-8F8A409F0D3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35013C43-42C5-43C4-B503-8F8A409F0D3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD14C3C0-6D28-4A30-9059-2C7F651581C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD14C3C0-6D28-4A30-9059-2C7F651581C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD14C3C0-6D28-4A30-9059-2C7F651581C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD14C3C0-6D28-4A30-9059-2C7F651581C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
