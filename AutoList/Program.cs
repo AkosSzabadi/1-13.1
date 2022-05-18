@@ -11,7 +11,7 @@ namespace AutoList
     {
         private class Auto
         {
-            private int rendszam;
+            private string rendszam;
             private string gyartmany;
             private string tipus;
             private string tulaj;
@@ -20,7 +20,7 @@ namespace AutoList
 
             public Auto() { }
 
-            public Auto(int rendszam, DateTime gyartasev, DateTime vizsga, string gyartmany, string tipus, string tulaj)
+            public Auto(string rendszam, DateTime gyartasev, DateTime vizsga, string gyartmany, string tipus, string tulaj)
             {
                 this.rendszam = rendszam;
                 this.gyartmany = gyartmany;
@@ -62,14 +62,13 @@ namespace AutoList
                     mezok = sor.Split(';');
 
                     AutoLista.Add(new Auto(
-                        int.Parse(mezok[0]),
+                        mezok[0],
                         DateTime.Parse(mezok[1]),
                         DateTime.Parse(mezok[2]),
                         mezok[3],
                         mezok[4],
                         mezok[5]));
-
-
+                   
                 }
         }
         public void Kiir()

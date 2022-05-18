@@ -13,6 +13,7 @@ namespace AutoList
             AutoList bl = new AutoList();
             bl.Beolvas();
             bl.Kiir();
+            Console.ReadKey();
         }
     }
 }
