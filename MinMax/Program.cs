@@ -6,38 +6,32 @@ using System.Threading.Tasks;
 
 namespace MinMax
 {
+    public class Unit
+    {
+        private int min = 0;
+        private int max = 0;
+        private int[] tomb= new int[] {};
+        public Unit(int[] tomb)
+        {
+            this.tomb = tomb;
+        }
+        public int Min()
+        {
+            min = tomb.Min();
+            Console.WriteLine("Legkisebb szám [0] " , min);
+            return min;
+        }
+        public int Max()
+        {
+            max = tomb.Max();
+            return max;
+        }
+    }
+    
     class Program
     {
         static void Main(string[] args)
         {
-            int min = 1000;
-            int max = -1;
-            int minIdx = 0;
-            int maxIdx = 0;
-
-            Random rnd = new Random();
-            int[] arr = new int[100];
-
-            for (int i = 0; i < arr.Length; ++i)
-            {
-                arr[i] = rnd.Next(0,1000);
-            }
-            for (int i = 0; i < 30; ++i) 
-            {
-                if (arr[i] < min)
-                {
-                    min = arr[i];
-                    minIdx = i;
-                }
-                if (arr[i] > max)
-                {
-                    max = arr[i];
-                    maxIdx = i;
-                }
-
-            }
-            Console.WriteLine("Minimum {0}, index {1}", min, minIdx);
-            Console.WriteLine("Maximum {0}, index {1}", max, maxIdx);
             Console.ReadKey();
         }
     }
