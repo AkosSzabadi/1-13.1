@@ -4,30 +4,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Szigetek
+namespace Sziget
 {
-    class Program
+    public class Unit
     {
-        static void Main(string[] args)
-        {
-            // Bekérés
-            Console.WriteLine("Add meg az adatokat! (0/1)");
-            // Változók
-            string data = Console.ReadLine();
-            int islandCount = 0;
-            int maxIslandLength = 0;
-            int i = 0;
+       private string data =string.Empty;
+       private int islandCount = 0;
+       private int maxIslandLength = 0;
+       private int i = 0;
 
-            // A string index-eket számolja, hogyha 1-est talál megnöveli a változót amelyben a szigetek számát tároljuk(islandCount)
-            while (i < data.Length)
+        public Unit(string data)
+        {
+            this.data = data;
+        } 
+        public void Vizsgalat()
+        {
+            while (i < this.data.Length)
             {
-                if (data[i] == '1')
+                if (this.data[i] == '1')
                 {
                     ++islandCount;
                     int j = i;
                     int tmp = 0;
                     // A sziget hosszát számolja(Vagyis az 1-eseket)
-                    while (j < data.Length && data[j] == '1')
+                    while (j < this.data.Length && this.data[j] == '1')
                     {
                         ++j;
                         ++tmp;
@@ -42,8 +42,29 @@ namespace Szigetek
                     ++i;
                 }
             }
-            Console.WriteLine("Leghosszabb sziget: {0}", maxIslandLength);
-            Console.WriteLine("Szigetek száma: {0}", islandCount);
+        }
+        public int szigetszaama()
+        {
+            Vizsgalat();
+            Console.WriteLine("Szigetek száma: {0} ",islandCount);
+            return islandCount;
+        }
+        public int szigethossz()
+        {
+            Vizsgalat();
+            Console.WriteLine("Szigetek hossza {0} ", maxIslandLength);
+            return maxIslandLength;
+        }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Írjon be 0-at és 1-eseket: ");
+            Unit megoldas = new Unit(Console.ReadLine());
+            megoldas.szigethossz();
+            megoldas.szigetszaama();
             Console.ReadKey();
         }
     }
