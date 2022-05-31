@@ -1,7 +1,7 @@
 ﻿
-namespace FormMozg
+namespace FormMozgatás
 {
-    partial class Form1
+    partial class formmove
     {
         /// <summary>
         /// Required designer variable.
@@ -39,13 +39,13 @@ namespace FormMozg
             this.btnLefele = new System.Windows.Forms.Button();
             this.btnAlul = new System.Windows.Forms.Button();
             this.gpbAtlatszo = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.btnOpNo = new System.Windows.Forms.Button();
             this.btnOpCsok = new System.Windows.Forms.Button();
             this.gpbMeret = new System.Windows.Forms.GroupBox();
-            this.btnMeretNo = new System.Windows.Forms.Button();
-            this.btnMeretCsok = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.btnMeretCsok = new System.Windows.Forms.Button();
+            this.btnMeretNo = new System.Windows.Forms.Button();
             this.gpbAtlatszo.SuspendLayout();
             this.gpbMeret.SuspendLayout();
             this.SuspendLayout();
@@ -143,6 +143,17 @@ namespace FormMozg
             this.gpbAtlatszo.TabIndex = 1;
             this.gpbAtlatszo.TabStop = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Location = new System.Drawing.Point(6, 30);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(104, 20);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Átlátszóság";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
             // btnOpNo
             // 
             this.btnOpNo.Location = new System.Drawing.Point(174, 30);
@@ -173,24 +184,6 @@ namespace FormMozg
             this.gpbMeret.TabIndex = 1;
             this.gpbMeret.TabStop = false;
             // 
-            // btnMeretNo
-            // 
-            this.btnMeretNo.Location = new System.Drawing.Point(174, 30);
-            this.btnMeretNo.Name = "btnMeretNo";
-            this.btnMeretNo.Size = new System.Drawing.Size(75, 23);
-            this.btnMeretNo.TabIndex = 0;
-            this.btnMeretNo.Text = "Növekszik";
-            this.btnMeretNo.UseVisualStyleBackColor = true;
-            // 
-            // btnMeretCsok
-            // 
-            this.btnMeretCsok.Location = new System.Drawing.Point(268, 30);
-            this.btnMeretCsok.Name = "btnMeretCsok";
-            this.btnMeretCsok.Size = new System.Drawing.Size(75, 23);
-            this.btnMeretCsok.TabIndex = 0;
-            this.btnMeretCsok.Text = "Csökken";
-            this.btnMeretCsok.UseVisualStyleBackColor = true;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -201,16 +194,23 @@ namespace FormMozg
             this.label1.TabIndex = 1;
             this.label1.Text = "Méret";
             // 
-            // label2
+            // btnMeretCsok
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(6, 30);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Átlátszóság";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.btnMeretCsok.Location = new System.Drawing.Point(268, 30);
+            this.btnMeretCsok.Name = "btnMeretCsok";
+            this.btnMeretCsok.Size = new System.Drawing.Size(75, 23);
+            this.btnMeretCsok.TabIndex = 0;
+            this.btnMeretCsok.Text = "Csökken";
+            this.btnMeretCsok.UseVisualStyleBackColor = true;
+            // 
+            // btnMeretNo
+            // 
+            this.btnMeretNo.Location = new System.Drawing.Point(174, 30);
+            this.btnMeretNo.Name = "btnMeretNo";
+            this.btnMeretNo.Size = new System.Drawing.Size(75, 23);
+            this.btnMeretNo.TabIndex = 0;
+            this.btnMeretNo.Text = "Növekszik";
+            this.btnMeretNo.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -231,6 +231,7 @@ namespace FormMozg
             this.Controls.Add(this.btnKozep);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.gpbAtlatszo.ResumeLayout(false);
             this.gpbAtlatszo.PerformLayout();
             this.gpbMeret.ResumeLayout(false);
